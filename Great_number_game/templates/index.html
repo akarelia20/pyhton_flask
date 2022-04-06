@@ -12,7 +12,6 @@
         <p class="display-4 m-5">Welcome to the Great Number Game!!</p>
         <p class="font-weight-lighter m-3"> I am thinking of a number between 1 and 100</p>
     </blockquote>
-
     {% if 'guess' in session: %}
         {% if session['guess'] == session ['random'] %}
             <div class="card text-white bg-success mb-3 rounded text-center" style="max-width: 18rem; margin: 20px auto;">
@@ -31,17 +30,12 @@
             </div>
         {% endif%}  
     {% endif %}
-
-
     <div class="rounded-sm" >
         <form action="/process" method= "post" class="container-sm w-25 h-50 p-3 border border-5 text-center p-4" style="background-color: #eee;">
             <h4 class="text-center m-4"> Take a guess </h4>
             <input class="form-control" type="text" name="guess">
             <button class="btn btn-primary m-4" type="submit" value="guess"> Guess </button>
         </form>
-        
-
-    </div>
-    
+    </div>    
 </body>
 </html>

@@ -41,7 +41,6 @@ def add_num_of_times():
     session['counter']= (session['counter']-1)+ int(request.form['num'])
     return redirect('/')
 
-
 if __name__ == "__main__":
     app.run(debug=True)
 
